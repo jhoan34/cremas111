@@ -1,0 +1,185 @@
+.padre-home {
+  position: absolute;
+  top: 15vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  column-gap: 3rem; /* Elimina el valor negativo para evitar problemas de visualización */
+}
+
+.card-product {
+  margin-top: 10%;
+  background-color: black;
+  width: 60vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Ajusta el gap para ser consistente */
+  border-radius: 3%;
+  color: rgb(150, 85, 0);
+}
+
+.card-product-image {
+  width: 85%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product-text {
+  border-radius: 2%;
+  width: 85%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Ajusta el gap para ser consistente */
+}
+
+.card-product-text .card-product-name {
+  display: flex;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+.card-product-text .card-product-verproduct {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product-text .card-product-verproduct a {
+  color: rgb(132, 0, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.card-product-text .card-product-verproduct a:hover {
+  color: rgb(0, 220, 70);
+}
+
+.card-product-delete {
+  width: 100%;
+  height: 5vh;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pantallas medianas (tablet) */
+@media (max-width: 1199px) {
+  .padre-home {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 2rem;
+      top: 20vh; /* Ajusta el top para mejor alineación */
+  }
+
+  .card-product {
+      width: 75vh;
+      height: 75vh;
+  }
+
+  .card-product-image {
+      width: 80%;
+      height: 55%;
+  }
+
+  .card-product-text {
+      width: 80%;
+      height: 25%;
+  }
+
+  .card-product-text .card-product-name {
+      height: 55%;
+  }
+
+  .card-product-text .card-product-verproduct {
+      height: 45%;
+  }
+
+  .card-product-text .card-product-verproduct a {
+      font-size: 1rem;
+  }
+}
+
+/* Pantallas pequeñas (smartphones grandes) */
+@media (max-width: 767px) {
+  .padre-home {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      top: 20vh;
+  }
+
+  .card-product {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .card-product-image {
+      width: 90%;
+      height: 50%;
+  }
+
+  .card-product-text {
+      width: 90%;
+      height: 25%;
+  }
+
+  .card-product-text .card-product-name {
+      height: 50%;
+  }
+
+  .card-product-text .card-product-verproduct {
+      height: 50%;
+  }
+
+  .card-product-text .card-product-verproduct a {
+      font-size: 1rem;
+  }
+}
+
+/* Pantallas muy pequeñas (smartphones pequeños) */
+@media (max-width: 479px) {
+  .padre-home {
+      grid-template-columns: 1fr;
+      row-gap: 1.5rem;
+      top: 15vh;
+  }
+
+  .card-product {
+      width: 90%;
+      height: 50vh;
+  }
+
+  .card-product-image {
+      width: 95%;
+      height: 50%;
+  }
+
+  .card-product-text {
+      width: 95%;
+      height: 25%;
+  }
+
+  .card-product-text .card-product-name {
+      height: 50%;
+  }
+
+  .card-product-text .card-product-verproduct {
+      height: 50%;
+  }
+
+  .card-product-text .card-product-verproduct a {
+      font-size: 0.9rem;
+  }
+}
